@@ -20,6 +20,14 @@ public class CompraDTO {
         return endereco;
     }
 
+    @Override
+    public String toString() {
+        return "CompraDTO{" +
+                "itens=" + itens +
+                ", endereco=" + endereco +
+                '}';
+    }
+
     public void setEndereco(EnderecoDTO endereco) {
         this.endereco = endereco;
     }

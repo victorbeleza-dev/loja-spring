@@ -4,7 +4,7 @@ public class EnderecoDTO {
 
     private String rua;
 
-    private int numero;
+    private Integer numero;
 
     private String estado;
 
@@ -16,11 +16,11 @@ public class EnderecoDTO {
         this.rua = rua;
     }
 
-    public int getNumero() {
+    public Integer getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(Integer numero) {
         this.numero = numero;
     }
 
@@ -30,5 +30,14 @@ public class EnderecoDTO {
 
     public void setEstado(String estado) {
         this.estado = estado;
+    }
+
+    @Override
+    public String toString() {
+        return "EnderecoDTO {" +
+                "rua='" + rua + '\'' +
+                ", numero=" + numero +
+                ", estado='" + estado + '\'' +
+                '}';
     }
 }

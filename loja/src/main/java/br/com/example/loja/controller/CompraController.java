@@ -2,7 +2,9 @@ package br.com.example.loja.controller;
 
 
 import br.com.example.loja.controller.dto.CompraDTO;
+import br.com.example.loja.model.Compra;
 import br.com.example.loja.service.CompraService;
+import org.apache.catalina.realm.CombinedRealm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +19,7 @@ public class CompraController {
     private CompraService compraService;
 
     @RequestMapping(method = RequestMethod.POST)
-    public void realizaCompra(@RequestBody CompraDTO compra){
-        compraService.realizaCompra(compra);
+    public Compra realizaCompra(@RequestBody CompraDTO compra){
+        return compraService.realizaCompra(compra);
     }
 }

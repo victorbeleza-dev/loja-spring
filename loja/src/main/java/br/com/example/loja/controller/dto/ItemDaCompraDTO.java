@@ -2,23 +2,23 @@ package br.com.example.loja.controller.dto;
 
 public class ItemDaCompraDTO {
 
-    private long id;
+    private Long id;
 
-    private int quantidade;
+    private Integer quantidade;
 
-    public int getQuantidade() {
-        return quantidade;
-    }
-
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
-    }
-
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
+    }
+
+    public Integer getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(Integer quantidade) {
+        this.quantidade = quantidade;
     }
 }
