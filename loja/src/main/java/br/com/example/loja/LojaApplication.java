@@ -32,7 +32,7 @@ public class LojaApplication {
 				if(authentication == null) {
 					return;
 				}
-				
+
 				OAuth2AuthenticationDetails details = (OAuth2AuthenticationDetails)authentication.getDetails();
 				template.header("Authorization", "Bearer" + details.getTokenValue());
 			}
