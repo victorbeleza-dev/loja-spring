@@ -1,10 +1,7 @@
 package br.com.example.loja.config;
 
-import com.google.common.net.HttpHeaders;
-import io.swagger.models.auth.In;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.bind.annotation.RequestMethod;
 import springfox.documentation.builders.ParameterBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -19,7 +16,6 @@ import springfox.documentation.swagger.web.SecurityConfiguration;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import static java.util.Collections.singletonList;
-import static springfox.documentation.builders.PathSelectors.regex;
 
 import java.util.List;
 import java.util.ArrayList;
